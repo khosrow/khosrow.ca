@@ -1,144 +1,378 @@
-body, input
-{
-    font-family: "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
-    color: #44352C;
+body {
+font-family:Arial, serif;
+font-size:13px;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:1.7em;
 }
 
-a
-{
-    color: #9B9C83;
-    text-decoration:none;
-    border-bottom: 1px orange dashed;
+img {
+        /*display: block;*/
+		margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 1px;
+		padding-top: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		padding-left: 5px;
 }
 
-a:hover 
-{
-    color: #0080FF;
+a {
+border-bottom:1px dotted #000;
+text-decoration:none;
+color:#000;
+font-weight:600;
 }
 
-#container
-{
-    border: 1px #9B9C83 solid;
-    -moz-border-radius: 8px;
-    margin: auto;
-    padding: 5px;
-    width: 700px;
+a img {
+border:none;
+color:none;
 }
 
-#title
-{
-    color: #CC6633;
-    margin: 0;
+a:hover {
+color:#e12000;
+border-bottom:1px dashed #e12000;
+background-color:#f7f7f7;
 }
 
-ul#navigation, ul#form
-{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+a:hover img {
+border:none;
+background:none;
+color:none;
 }
 
-ul#navigation
-{
-    float: right;
+hr{
+margin-top:35px;
+border:0;
+border-top:1px dotted #ccc;
+width:620px;
+color:#fff;
+clear:both;
 }
 
-ul#form
-{
-    clear: both;
+#blurb {
+font-family:Georgia;
+height:auto;
+border-bottom:1px dotted #ccc;
+width:100%;
+float:left;
+padding:35px 0;
+font-size:32px;
+font-weight:400;
+line-height:120%;
+}
+#blurb:hover {
+color:#e12000;
 }
 
-ul#navigation li
-{
-    float: left;
-    margin: 0;
-    padding: 5px 0;
-    border-top: 2px #BFAA9B solid;
+#wrapper {
+width:900px;
+margin:40px auto;
+}
+#header {
+float:left;
+width:900px;
+border-bottom:1px dotted #ccc;
+margin:0;
 }
 
-ul#navigation li a
-{
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #AA8E79;
-    padding: 5px 15px;
-    margin-left: 1px;
-    text-decoration: none;
-    border-bottom: 0 #ffffff solid;
+#logo {
+float:left;
+width:auto;
+padding:18px 0 34px 0;
 }
 
-ul#navigation li  a:hover
-{
-    color: #44352C;
+#logo h2 {
+font-size : 18px;
+font-weight : 200;
+padding : 12px 4px 0 0;
+letter-spacing : -1px;
 }
 
-ul#form li
-{
-    width: 700px;
+#logo a {
+color:#ff2b06;
+font-size:60px;
+font-weight:600;
+text-decoration:none;
+border-bottom:none;
+letter-spacing:-4px;
+background-color:#fff;
 }
 
-#footer
-{
-    color: #9B9C83;
-    font-size: small;
-    text-align: right;
+#nav {
+/*float:right;*/
+width:auto;
+padding:12px 0 0;
+margin-left: auto;
+margin-right: auto;
+}
+#nav ul {
+height:50px;
+float:right;
 }
 
-#address_bar
-{
-    border-top: 2px #BFAA9B solid;
-    border-bottom: 3px #44352C solid;
-    background-color: #AA8E79;
-    text-align: center;
-    padding: 5px 0;
-    color: #ffffff;
+#nav li {
+text-align:center;
+float:left;
+display:inline;
+width:auto;
+}
+/*#nav li a {*/
+#nav a {
+font-size:20px;
+font-weight:400;
+/*display:block;*/
+padding:15px;
+border-bottom:none;
+}
+/*#nav li a:hover {*/
+#nav a:hover {
+background-color:#f7f7f7;
 }
 
-#go
-{
-    background-color: #ffffff;
-    font-weight: bold;
-    color: #AA8E79;
-    border: 0 #ffffff solid;
-    padding: 2px 5px;
+#content {
+width:620px;
+float:left;
+border-right:1px dotted #ccc;
+padding:0 0 30px 0;
+min-height:420px;
+}
+.post {
+padding:0 30px 0 0;
+}
+.post p {
+margin:14px 0 14px 0;
+}
+.post em{
+font-style:italic;
+}
+.post h2 {
+font-family:Georgia;
+font-size:24px;
+margin:25px 0 10px 0;
+font-weight:normal;
+}
+.post h1, .post h1 a{
+font-family:Georgia;
+font-size:28px;
+margin:30px 0 10px 0;
+font-weight:normal;
+line-height:32px;
+}
+.post h3, .post h4 {
+font-family:Georgia;
+font-size:20px;
+margin:15px 0 10px 0;
+font-weight:normal;
+}
+.post h4 {
+font-size:18px;
+}
+.post h1:hover, .post h2:hover, .post h3:hover, .post h4:hover {
+color:#e12000;
+}
+.post .indent {
+padding-left:10px;
+}
+.post .indent p {
+padding-left:10px;
+}
+.post small {
+font-size:11px;
+}
+.post small a {
+font-weight:normal;
+}
+.post .alignright {
+float:right;
+margin-left:10px;
+}
+.post .alignleft {
+float:left;
+margin-right:10px;
+}
+.post .aligncenter {
+margin:0 auto;
+display:block;
+}
+.post abbr {
+font-weight:normal;
+}
+.post ul{
+list-style:circle;
+margin:0 0 0 25px;
+}
+.post ol{
+list-style:decimal;
+margin:0 0 0 30px;
+}
+.post .wp-caption {
+background:#f7f7f7;
+border:1px solid #ccc;
+margin:10px;
+text-align:center;
+padding:5px 0 0;
+}
+.post .wp-caption-text {
+margin:0;
+}
+.post .wp-caption a, .post .wp-caption a:hover {
+border-bottom:0;
+}
+.post blockquote {
+color:#777;
+border-left:5px solid #ccc;
+margin:15px 30px 0 10px;
+padding-left:20px;
+}
+.post pre {
+font-family:courier;
+font-size:12px;
+letter-spacing:-1px;
+margin:14px 0 14px 0;
+}
+.post .message ul {
+margin:12px 0 0;
+}
+.post .message {
+display:none;
+background:#0F67A1;
+margin-top:10px;
+padding:20px;
+color:#fff;
 }
 
-#address_box
-{
-    width: 500px;
+#footer {
+width:900px;
+float:left;
+border-top:1px dotted #cccccc;
+text-align:center;
+padding:30px 0 40px 0;
 }
 
-.option
-{
-    padding: 2px 0;
-    background-color: #EEEBEA;
+
+#friendfeed.widget {
+		border-left: none !important;
+		border-bottom: none !important;
+		/*border-right: 1px dotted #CCCCCC !important;
+		border-top: 1px dotted #CCCCCC !important;*/
+		border-right: none !important;
+		border-top: none !important;
+
 }
 
-.option label
-{
-    border-bottom: 2px #ffffff solid;
+#friendfeed.widget a {
+        color: #000000 !important;
+        border-bottom: 1px dotted #000000 !important;
 }
 
-form
-{
-    margin: 0;
+#friendfeed.widget a:hover {
+		color: #e12000 !important;
+		border-bottom: 1px dashed #e12000 !important;
+		text-decoration: none !important;
 }
 
-#error, #auth
-{
-    background-color: #BF6464;
-    border-top: 1px solid #44352C;
-    border-bottom: 1px solid #44352C;
-    width: 700px;
-    clear: both;
+img.displayed {
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		padding-left: 5px;
 }
 
-#auth
-{
-    background-color: #94C261;
+div.container{
+        vertical-align: center;
+		margin-left: auto;
+		margin-right: auto;
 }
 
-#error p, #auth p, #auth form
-{
-    margin: 5px;
+#sidebar {
+width:250px;
+float:right;
+margin:0 0 25px 0;
+}
+#sidebar h3 {
+padding:25px 0 3px 0;
+font-size:18px;
+}
+#sidebar .block ul {
+border-bottom:1px dotted #ccc;
+}
+#sidebar .block ul .children{
+border:0;
+padding: 0 0 0 8px;
+}
+#sidebar .block li {
+border-top:1px dotted #ccc;
+}
+#sidebar .block li a {
+background:transparent url(images/bullet_black.gif) no-repeat scroll 6px 52%;
+font-size:13px;
+font-weight:normal;
+padding:2px 0 2px 15px;
+display:block;
+border-bottom:none;
+}
+#sidebar .block li a:hover {
+background:#f7f7f7 url(images/bullet_red.gif) no-repeat scroll 6px 52%;
+}
+#sidebar .widget_search label {
+display:block;
+padding:25px 0 3px 0;
+font-size:18px;
+border-bottom:1px dotted #ccc;
+margin:0 0 5px;
+}
+#sidebar .widget_recent_comments li {
+background:transparent url(images/bullet_black.gif) no-repeat scroll 6px 52%;
+padding:2px 0 2px 15px;
+}
+#sidebar .widget_recent_comments li a,#sidebar .widget_recent_comments li a:hover{
+background:none;
+border-bottom:1px dotted #000;
+text-decoration:none;
+color:#000;
+font-weight:600;
+}
+#sidebar .widget_recent_comments li a:hover {
+color:#e12000;
+border-bottom:1px dashed #e12000;
+background-color:#f7f7f7;
+}
+#sidebar .widget_tag_cloud h3 {
+margin:0 0 8px;
+border-bottom:1px dotted #ccc;
+}
+#sidebar .widget_text h3 , #sidebar .calendar h3{
+border-bottom:1px dotted #ccc;
+}
+#sidebar .calendar h3{
+display:none;
+}
+#sidebar #wp-calendar {
+width:95%;
+text-align:center;
+}
+#sidebar #wp-calendar caption, #sidebar #wp-calendar td, #sidebar #wp-calendar th{
+text-align:center;
+}
+#sidebar #wp-calendar caption {
+font-size:18px;
+padding:25px 0 3px 0;
+}
+#sidebar #wp-calendar th {
+font-weight: bold; 
+border-top:1px dotted #ccc;
+border-bottom:1px dotted #ccc;
+}
+#sidebar #wp-calendar tfoot td{
+border-top:1px dotted #ccc;
+border-bottom:1px dotted #ccc;
 }
